@@ -10,8 +10,8 @@ import mnist
 
 dirname = os.path.dirname(__file__)
 
-train_labels, train_images = Mnist.read_csv(os.path.join(dirname, '../data/mnist_train.csv'))
-DATASET = Mnist.DataSet(train_images, train_labels)
+train_labels, train_images = mnist.read_csv(os.path.join(dirname, '../data/mnist_train.csv'))
+DATASET = mnist.DataSet(train_images, train_labels)
 OUT = os.path.join(dirname, "../models/mnist")
 
 batch_size = 128
