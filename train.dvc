@@ -1,13 +1,18 @@
 cmd: python code/train.py
 deps:
 - path: code/train.py
+  md5: beffdc516150a3fb7099bbaaf121f3ab
 - path: data/mnist_train.csv
+  md5: 5b49cf1b57fb9d6102b559d59d99df7c
 outs:
 - path: models
   cache: true
   metric: false
   persist: false
+  md5: 7f5131b2d43463ed62a14475d2f3ca4b.dir
 - path: metrics/train.json
   cache: false
   metric: true
   persist: false
+  md5: 2bc48a480db6ec10e6992f947bd1311e
+md5: 146660834dfb2a9621e175de5b6d930a
